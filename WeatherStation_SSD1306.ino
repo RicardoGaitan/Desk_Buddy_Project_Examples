@@ -112,7 +112,7 @@ Adafruit_SSD1306 display(SCREEN_W, SCREEN_H, &Wire, -1);
 
 // ---------- PINS ----------
 
-const int PIN_JUMP = 3;   // D1 = GPIO3 (touch sensor)
+const int PIN_JUMP = 7;   // D1 = GPIO3 (touch sensor)
 const int PIN_BUZZ = 2;   // D0 = GPIO2
 
 // TTP223B output goes HIGH when touched
