@@ -12,7 +12,7 @@
 // XIAO ESP32-C3 GPIO mappings
 #define OLED_SDA 8      // D8 = GPIO8
 #define OLED_SCL 9      // D9 = GPIO9
-#define TOUCH_PIN 3     // D1 = GPIO3 (TTP223B touch sensor)
+#define TOUCH_PIN 7     // D1 = GPIO7 (TTP223B touch sensor)
 #define BUZZER_PIN 2    // D0 = GPIO2
 
 // TTP223B touch module: output goes HIGH when touched
