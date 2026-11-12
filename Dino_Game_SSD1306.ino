@@ -52,7 +52,7 @@ Adafruit_SSD1306 display(SCREEN_W, SCREEN_H, &Wire, -1);
 // ---------- PINS ----------
 
 // XIAO ESP32-C3 GPIO mappings
-const int PIN_JUMP = 3;   // D1 = GPIO3
+const int PIN_JUMP = 7;   // D1 = GPIO7
 const int PIN_BUZZ = 2;   // D0 = GPIO2
 
 // TTP223B touch module:
