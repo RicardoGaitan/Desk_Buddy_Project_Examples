@@ -1,5 +1,11 @@
 /*
-  LESSON 10 - WEATHER STATION on the OLED
+
+
+VERY VERY IMPORTANT FROM ADMIN:
+MAKE SURE TO CHANGE THE WIFI_SSID and WIFI_PASS to your own WiFi network name and password before 
+uploading the code to the board. Otherwise, the weather station will not work.
+
+
 
   Board   : Seeed XIAO ESP32-C3
   Display : 1.3-inch 128x64 OLED (SH1106 I2C controller)
@@ -78,8 +84,8 @@ enum WeatherKind {
 //                 USER SETTINGS (EDIT ME)
 // =====================================================
 
-const char* WIFI_SSID = "LAPTOP-0NOKUQ36 6346";
-const char* WIFI_PASS = "10D22<2r";
+const char* WIFI_SSID = "YOUR_WIFI_NAME";
+const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 
 const bool USE_FAHRENHEIT = false;   // false = Celsius + km/h, true = Fahrenheit + mph
 const bool USE_24H_CLOCK  = false;   // false = 12-hour with AM/PM
@@ -112,7 +118,7 @@ Adafruit_SH1106G display(SCREEN_W, SCREEN_H, &Wire, -1);
 
 // ---------- PINS ----------
 
-const int PIN_JUMP = 3;   // D1 = GPIO3 (touch sensor)
+const int PIN_JUMP = 7;   // D1 = GPIO7 (touch sensor)
 const int PIN_BUZZ = 2;   // D0 = GPIO2
 
 // TTP223B output goes HIGH when touched

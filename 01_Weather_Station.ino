@@ -1,4 +1,11 @@
 /*
+
+VERY VERY IMPORTANT FROM ADMIN:
+MAKE SURE TO CHANGE THE WIFI_SSID and WIFI_PASS to your own WiFi network name and password before uploading the code to the board. Otherwise, the weather station will not work.
+
+
+
+
   LESSON 10 - WEATHER STATION on the OLED
 
   Board   : Seeed XIAO ESP32-C3
@@ -78,8 +85,8 @@ enum WeatherKind {
 //                 USER SETTINGS (EDIT ME)
 // =====================================================
 
-const char* WIFI_SSID = "LAPTOP-0NOKUQ36 6346";
-const char* WIFI_PASS = "10D22<2r";
+const char* WIFI_SSID = "YOUR_WIFI_NAME";
+const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 
 const bool USE_FAHRENHEIT = false;   // false = Celsius + km/h, true = Fahrenheit + mph
 const bool USE_24H_CLOCK  = false;   // false = 12-hour with AM/PM
